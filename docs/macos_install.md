@@ -1,6 +1,7 @@
 
 # llama-cpp-python - MacOS Install with Metal GPU
 
+*updated: Sun 18 June 2023*
 
 **(1) Make sure you have xcode installed... at least the command line parts**
 ```
@@ -33,8 +34,9 @@ pip uninstall llama-cpp-python -y
 CMAKE_ARGS="-DLLAMA_METAL=on" FORCE_CMAKE=1 pip install -U llama-cpp-python --no-cache-dir
 pip install 'llama-cpp-python[server]'
 
-# you should now have llama-cpp-python v0.1.62 installed
-llama-cpp-python         0.1.62      
+# you should now have llama-cpp-python v0.1.xx installed
+pip list | grep llama
+llama-cpp-python         0.1.xx      
 
 ```
 
